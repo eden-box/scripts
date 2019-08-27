@@ -1,0 +1,10 @@
+/var/log/backup/*.log {
+    daily
+    missingok
+    rotate 4
+    compress
+    notifempty
+    copytruncate
+    dateext
+    dateformat %d-%m-%Y
+}
