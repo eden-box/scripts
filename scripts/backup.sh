@@ -11,7 +11,7 @@ readonly LINE="================================================================"
 # $1 - path to file containing the token
 get_token()
 {
-    local token=$(cat $1 | tr -d "[:space:]")
+    local token=$(tr -d "[:space:]" < $1)
     echo $token
 }
 
